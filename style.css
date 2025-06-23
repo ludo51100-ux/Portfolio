@@ -1,0 +1,110 @@
+/* Variables et styles de base */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: cyan;
+    --text-color: #333;
+    --border-radius: 8px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.header-content {
+    margin-bottom: 1.5rem;
+}
+
+.titre {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Sections */
+.section {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+/* Profil */
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profil img {
+    width: 200px;
+    height: 200px;
+    object-fit: absolute;
+    border-radius: 50%;
+    border: 4px solid var(--secondary-color);
+}
+
+/* Compétences */
+.competences-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+
+.element {
+    transition: transform 0.3s ease;
+  }
+  
+  .element:hover {
+    transform: scale(0.9) rotate(-3deg); /* Réduit et fait bouger un peu */
+  }
